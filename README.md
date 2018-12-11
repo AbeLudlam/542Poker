@@ -1,10 +1,9 @@
 Project done by: Abraham Ludlam and Hezekiah Pilli
 Contact: LudlamAbraham@csu.fullerton.edu
-	 HezekiahPilli@csu.fullerton.edu
+	 , HezekiahPilli@csu.fullerton.edu
 
-Software Used: Python 2.7.6
-	       Pytest 3.10.1
-               Python's unittest Framework
+Software Used: Python 2.7.6, Pytest 3.10.1
+               , Python's unittest Framework
 
 The original program was found here: (https://github.com/fogleman/Poker). This is a Python Implementation of Cactus Kev's Poker Hand Evaluator (http://www.suffecool.net/poker/evaluator.html). It does evaluations for 5 and 7 card poker hands, where it provides a score for the hand. The lower the score, the better hand, with a Royal Flush with the lowest score of '0'. It has functions to display which of the two randomly generated hands won. We expanded it to have a three player evaluation of 7 card texas hold'em style poker and an interactive interface for the user to run any of the evaluations as much as he wants. 
 
