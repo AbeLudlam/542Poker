@@ -20,12 +20,10 @@ For the functions that display the result of the random evaluations, we had to u
 
 We also wanted to automatically test the input of the use_eval function, but found out that the way we handled input was not easy to test. We decided to show a mock file to show how we would handle doing mock inputs if we changed the original code. This uses parts of Python's unittest framework for its mock behavior. This is 'MOCK_pokerInput_MOCKTEST.py'
 
-To run all tests, simply go to the directory in command line where the project is stored, usually the 'Poker' directory. Then simply type 'pytest' and it will run all tests in directory and subdirectories.
+To run all tests, simply go to the directory in command line where the project is stored, usually the 'Poker' directory. Then simply type "pytest" and it will run all tests in directory and subdirectories.
 
-To run all passed tests, type 'pytest Passed\ Tests'
+To run all passed tests, type "pytest Passed\ Tests"
 
-To run all failed tests, type 'pytest Failed\ Tests'
+To run all failed tests, type "pytest Failed\ Tests"
 
-If you want to run an individual test, such as 'pokerEval7_test.py', 
-
-you would type in the format as 'pytest Passed\ Tests/pokerEval7_test.py'
+If you want to run an individual test, such as 'pokerEval7_test.py', you would type in the format as "pytest Passed\ Tests/pokerEval7_test.py"
