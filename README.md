@@ -12,11 +12,11 @@ The original program was found here: (https://github.com/fogleman/Poker). This i
 
 To run the program (poker.py), Python 2.7.6 was used in a Linux Ubuntu system and this command was used to run it from the command line: "python ./poker.py". poker.py requires poker_data.py to perform the evaluations needed
 
-For the tests, we used Pytest 3.10.1 to perform the tests. For the evaluations, we used equivalence class testing to categorize the ranking of the different types of hands and to limit the number of tests. If we were to test every single hand combination for both evaluations functions, there would be over a trillion test cases. By utilizing equivalence class partioning and testing, we limited the number of tests for both functions to just above 20 test cases. These files are 'pokerEval5_test.py' and 'pokerEval7_test.py'
+For the tests, we used Pytest 3.10.1 to perform the tests. For the evaluations, we used equivalence class testing to categorize the ranking of the different types of hands and to limit the number of tests. If we were to test every single hand combination for both evaluations functions, there would be over a trillion test cases. By utilizing equivalence class partioning and testing, we limited the number of tests for both functions to just above 20 test cases. These files are 'pokerEval5_test.py' and 'pokerEval7_test.py' in 'Passed Tests'
 
-We also had quality tests to make sure the evaluation functions are not handing scores for invalid hands that have two or more of the same card. Currently these tests fail, as this functionality is not implemented for the eval5() and eval7(). This is 'pokerHandCheck_test.py'.
+We also had quality tests to make sure the evaluation functions are not handing scores for invalid hands that have two or more of the same card. Currently these tests fail, as this functionality is not implemented for the eval5() and eval7(). This is 'pokerHandCheck_test.py' in 'Failed Tests'.
 
-For the functions that display the result of the random evaluations, we had to use a stubbed out version of the functions. Because of this, we decided to only show one of these stubbed versions as these tests felt very redundant at testing logic flow. In return, we made logic flow graphs for all three of the display functions (one_round() functions). This is file is 'pokerOneRounds_test.py'
+For the functions that display the result of the random evaluations, we had to use a stubbed out version of the functions. Because of this, we decided to only show one of these stubbed versions as these tests felt very redundant at testing logic flow. In return, we made logic flow graphs for all three of the display functions (one_round() functions). This is file is 'pokerOneRounds_test.py' in 'Passed Tests'
 
 We also wanted to automatically test the input of the use_eval function, but found out that the way we handled input was not easy to test. We decided to show a mock file to show how we would handle doing mock inputs if we changed the original code. This uses parts of Python's unittest framework for its mock behavior. This is 'MOCK_pokerInput_MOCKTEST.py'
 
@@ -26,4 +26,7 @@ To run all passed tests, type "pytest Passed\ Tests"
 
 To run all failed tests, type "pytest Failed\ Tests"
 
-If you want to run an individual test, such as 'pokerEval7_test.py', you would type in the format as "pytest Passed\ Tests/pokerEval7_test.py"
+If you want to run an individual test, such as 'pokerEval7_test.py', type "pytest Passed\ Tests/pokerEval7_test.py"
+
+To generate logs of the tests, you can use the format "pytest | tee log.txt" which will send the output of the test to the file log.txt. The current log.txt shows the last test logged.
+
