@@ -1,0 +1,32 @@
+============================= test session starts ==============================
+platform linux2 -- Python 2.7.6, pytest-3.10.1, py-1.7.0, pluggy-0.8.0
+rootdir: /home/abraham/Desktop/Poker, inifile:
+collected 27 items
+
+Failed Tests/pokerHandCheck_test.py FF                                   [  7%]
+Passed Tests/pokerEval5_test.py ..........                               [ 44%]
+Passed Tests/pokerEval7_test.py ............                             [ 88%]
+Passed Tests/pokerOneRounds_test.py ...                                  [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_eval7SameCard ______________________________
+
+    def test_eval7SameCard():
+    	player1 = ('2s', '2s', 'Tc', '3d', '2h', '7h', '8d' )
+>   	assert eval7(player1) == '', "No score should be given for a hand with 2 or more of the same card"
+E    AssertionError: No score should be given for a hand with 2 or more of the same card
+E    assert 2441 == ''
+E     +  where 2441 = eval7(('2s', '2s', 'Tc', '3d', '2h', '7h', ...))
+
+Failed Tests/pokerHandCheck_test.py:10: AssertionError
+______________________________ test_eval5SameCard ______________________________
+
+    def test_eval5SameCard():
+    	player1 = ('2s', '2s', 'Tc', '3d', '2h')
+>   	assert eval5(player1) == '', "No score should be given for a hand with 2 or more of the same card"
+E    AssertionError: No score should be given for a hand with 2 or more of the same card
+E    assert 2446 == ''
+E     +  where 2446 = eval5(('2s', '2s', 'Tc', '3d', '2h'))
+
+Failed Tests/pokerHandCheck_test.py:15: AssertionError
+===================== 2 failed, 25 passed in 0.18 seconds ======================
